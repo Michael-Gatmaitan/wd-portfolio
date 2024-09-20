@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Michael Gatmaitan</title>
+    <link href="./output.css" rel="stylesheet" />
+
+    <!-- Montserrat font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body
+    class="bg-[#121212] text-white px-[18px] lg:px-[80px] overflow-x-hidden"
+  >
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/EaselPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+
+    <script>
+      // use a script tag or an external JS file
+      document.addEventListener("DOMContentLoaded", (event) => {
+        gsap.registerPlugin(
+          ScrollTrigger,
+          ScrollToPlugin,
+          EaselPlugin,
+          TextPlugin
+        );
+        // gsap code here!
+      });
+    </script>
+    <!-- Nav -->
+    <nav
+      class="w-[100%] bg-transparent py-[18px] lg:py-[24px] flex items-center justify-center fixed top-0 left-0 px-[18px] lg:px-[80px] z-10 lg:items-start lg:justify-start"
+    >
+      <div class="logo lg:left-0">
+        <img class="lg:w-[30px]" src="./icons/logo.svg" alt="logo" />
+      </div>
+
+      <div
+        class="gap-8 hidden lg:flex absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-20"
+      >
+        <a href="#about" class="nav-buttons">
+          <button
+            class="py-2 px-3 rounded-md text-white bg-transparent hover:bg-gray-700 duration-75"
+          >
+            About
+          </button>
+        </a>
+        <a href="#projects" class="nav-buttons">
+          <button
+            class="py-2 px-3 rounded-md text-white bg-transparent hover:bg-gray-700 duration-75"
+          >
+            Projects
+          </button>
+        </a>
+        <a href="#gallery" class="nav-buttons">
+          <button
+            class="py-2 px-3 rounded-md text-white bg-transparent hover:bg-gray-700 duration-75"
+          >
+            Gallery
+          </button>
+        </a>
+        <a href="#contact" class="nav-buttons">
+          <button
+            class="py-2 px-3 rounded-md text-white bg-transparent hover:bg-gray-700 duration-75"
+          >
+            Contact
+          </button>
+        </a>
+      </div>
+    </nav>
+
+    <section class="w-full h-full">
+      <!-- Background image -->
+      <div
+        class="w-[100vw] h-[100svh] top-0 ml-[-18px] lg:ml-[-80px] z-[-1] bg-no-repeat bg-center bg-cover bg-[url('./images/michael-pogi.jpg')]"
+      >
+        <div
+          class="absolute top-0 left-0 bg-black bg-opacity-[83%] w-full h-full"
+        />
+        <!-- Name -->
+        <div class="mt-[126px] lg:mt-[262px] lg:text-center w-full px-[18px]">
+          <h1
+            class="text-stagger text-5xl font-bold font-montserrat lg:text-[120px]"
+          >
+            MICHAEL GATMAITAN
+          </h1>
+          <h1
+            class="text-stagger text-3xl font-bold font-montserrat lg:text-3xl opacity-80"
+          >
+            A FRONT END DEVELOPER WHO LOVES DESIGN
+          </h1>
+        </div>
+
+        <div
+          class="absolute bottom-[50px] flex flex-col items-center w-full px-[18px]"
+        >
+          <h1
+            class="text-stagger text-2xl font-bold font-montserrat text-center mb-[50px] lg:text-3xl"
+          >
+            Discover my life as a self-taught front end developer
+          </h1>
+
+          <div class="flex flex-col items-center">
+            <h1 class="text-stagger text-lg font-bold">Scroll down</h1>
+            <div>
+              <img
+                class="text-stagger grid"
+                src="./icons/down.svg"
+                alt="down"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About the developer -->
+    <div class="mt-[180px]">
+      <div class="grid gap-[4px] lg:gap[6px] mb-[12px] lg:mb-[18px]">
+        <h1 class="text-3xl font-bold" id="about">About the developer</h1>
+        <div class="w-full h-[2px] bg-[#333333] mb-[12px] lg:mb-[18px]" />
+      </div>
+
+      <!-- Contents -->
+      <div class="flex justify-around">
+        <div>
+          <div class="text-[12px] lg:text-[14px] opacity-50">Favorites</div>
+
+          <ul class="pl-2 text-[18px] lg:text-[24px] font-semibold mb-[4px]">
+            <li class="list-['-']"><i>Music</i></li>
+            <li class="list-['-']"><i>Drawing</i></li>
+            <li class="list-['-']"><i>Volleyball</i></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="text-[12px] lg:text-[14px] opacity-50">Favorites</div>
+
+          <ul class="pl-2 text-[18px] lg:text-[24px] font-semibold mb-[4px]">
+            <li class="list-['-']"><i>JavaScript</i></li>
+            <li class="list-['-']"><i>Java</i></li>
+            <li class="list-['-']"><i>C++</i></li>
+            <li class="list-['-']"><i>Python</i></li>
+          </ul>
+        </div>
+        <div>
+          <div class="text-[12px] lg:text-[14px] opacity-50">Softwares</div>
+
+          <ul class="pl-2 text-[18px] lg:text-[24px] font-semibold mb-[4px]">
+            <li class="list-['-']"><i>Figma</i></li>
+            <li class="list-['-']"><i>VS Code</i></li>
+            <li class="list-['-']"><i>Neovim</i></li>
+            <li class="list-['-']"><i>Notion</i></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="mt-[180px] mb-[180px]">
+      <div class="grid gap-[4px] lg:gap[6px]"></div>
+      <h1 class="text-3xl font-bold" id="projects">Projects made</h1>
+      <div class="w-full h-[2px] bg-[#333333] mb-[12px] lg:mb-[18px]" />
+    </div> -->
+
+    <!-- Contents -->
+    <div
+      class="flex flex-row w-full justify-around gap-4 items-center absolute bg-slate-200"
+    >
+      <div
+        class="transition-all bg-slate-500 w-1/5 h-full hover:bg-red-600"
+      ></div>
+      <div class="transition-all hover:flex-shrink-[0.8]">
+        <img src="./images/project-2.png" alt="project" title="Omo music" />
+      </div>
+      <div class="transition-all hover:flex-shrink-[0.8]">
+        <img src="./images/project-3.png" alt="project" title="Taskit" />
+      </div>
+      <div class="transition-all hover:flex-shrink-[0.8]">
+        <img src="./images/project-4.png" alt="project" title="Star wars API" />
+      </div>
+      <div class="transition-all hover:flex-shrink-[0.8]">
+        <img
+          src="./images/project-5.png"
+          alt="project"
+          title="Post malone (Experimental project)"
+        />
+      </div>
+    </div>
+
+    <script defer src="./scripts/index.js"></script>
+  </body>
+</html>
